@@ -14,4 +14,6 @@ block content
   div(class= "col-sm-2" onclick= `buy(${index})`) #{value.name} is the name, in #{value.country}, They are #{value.wealth} rich 
 
 script. 
-  function 
+  function buy(index){
+    alert(`You purchased Item ${index+1}`)
+  }

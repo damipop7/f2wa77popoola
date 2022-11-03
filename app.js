@@ -10,6 +10,7 @@ var usersRouter = require('./routes/users');
 var bonusRouter = require('./routes/bonus');
 var RoyaltyRouter = require('./routes/Royalty');
 var gridbuildRouter = require('./routes/gridbuild');
+var selectorRouter = require('./routes/selector');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/mydata', mydataRouter);
 app.use('/bonus', bonusRouter);
 app.use('/Royalty', RoyaltyRouter);
 app.use('/gridbuild', gridbuildRouter);
+app.use('/selector', selectorRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
